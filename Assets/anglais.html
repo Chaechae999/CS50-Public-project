@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en,fre">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to UFR UNISTRA</title>
+    <link rel="stylesheet" type="text/css" href="projet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous" />
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain attribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                /*make an HTTP request using the attribute value as the file name:*/
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                    if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                    if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                    /*remove the attribute, and call this function once more:*/
+                    elmnt.removeAttribute("w3-include-html");
+                    includeHTML();
+                    }
+                }      
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /*exit the function:*/
+                return;
+                }
+            }
+        };
+    </script>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+</head>
+<body style="background-color: black;">   
+    <div style="margin: 10px;">
+        <!-- <img src="search.png" alt="search" width="50" id="top_picture1"> -->
+        <span id="top_menu" style="margin-left: 20px; text-decoration: underline;">
+            <div class="dropdown">
+                <button class="dropbtn">Language</button>
+                <div class="dropdown-content">
+                  <a href="anglais.html">English</a>
+                  <a href="finalprojet.html">Français</a>
+                </div>
+              </div>
+        </span>
+        <button id="top_rightmenu" style="border-color: #008673; background-color: #008673;"><a href="https://webmail.partage.renater.fr/mail#1">Messagerie</a></button>
+        <span id="top_rightmenu" style="margin-right: 20px; border-color: gris;">Ernest</span>
+        <span id="title"><a style="color: white;" href="finalprojet.html">UFR MATH AND COMPUTER SCIENCE</a></span>
+    </div>
+    <hr style="color: rgb(3, 3, 3); margin-top: 20px;">
+    <div id="menu-group">
+    <div class="bg-img">
+        <div id="containerbox">
+            <h2 id="bottom-left">Event <br>to come</h2>
+            <nav role="navigation">
+                <ul id="main-menu">
+                    <li><a href="anglais.html">Home</a></li>
+                    <li><a href="#">Courses</a>
+                    <ul id="sub-menu">
+                        <li><a href="https://mathinfo.unistra.fr/formations/licence/" aria-label="subemnu">Bachelor</a></li>
+                        <li><a href="https://mathinfo.unistra.fr/formations/licence-professionnelle/administration-de-reseaux-et-services/" aria-label="subemnu">professional bachelor</a></li>
+                        <li><a href="https://mathinfo.unistra.fr/formations/master/" aria-label="subemnu">Master</a></li>
+                        <li><a href="https://mathinfo.unistra.fr/formations/cursus-master-ingenierie/" aria-label="subemnu">Engineer master</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="https://mathinfo.unistra.fr/admission/admission/">Admission</a>
+                    </li>
+                    <li><a href="#">Life in Strasbourg</a>
+                    <ul id="sub-menu">
+                        <li><a href="https://mathinfo.unistra.fr/vie-etudiante/scolarite/" aria-label="subemnu">Schooling</a></li>
+                        <li><a href="https://mathinfo.unistra.fr/vie-etudiante/calendriers-universitaires/" aria-label="subemnu">Calendar</a></li>
+                        <li><a href="https://mathinfo.unistra.fr/vie-etudiante/bourses/" aria-label="subemnu">Scolarship</a></li>
+                        <li><a href="https://mathinfo.unistra.fr/vie-etudiante/stages-emplois/" aria-label="subemnu">Internship</a></li>
+                        <li><a href="https://bu.unistra.fr/opac/article/decouvrir-les-bibliotheques/bibliotheques" aria-label="subemnu">Library</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="https://mathinfo.unistra.fr/recherche/les-laboratoires-de-recherche/">Research</a></li>
+                    <li><a href="#">Entreprises</a>
+                    <ul id="sub-menu">
+                        <li><a href="https://mathinfo.unistra.fr/entreprises/alternance/" aria-label="subemnu">Alternative study</a></li>
+                        <li><a href="https://mathinfo.unistra.fr/entreprises/stages/" aria-label="subemnu">Internship</a></li>
+                        <li><a href="https://mathinfo.unistra.fr/entreprises/taxe-dapprentissage-donation/" aria-label="subemnu">Donation</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                </nav>
+            
+            <button id="plus-info"><a href="https://www.ju-strasbourg.fr/">More information</a></button>
+        </div>
+    </div>
+    </div>
+    <div id="gallerypresent">Welcome</div>
+    <div class="gallery" id="gallery">
+        <a href="UNTERLINDEN.html"><img src="museum.jpeg" alt="museum1" class="slide"></img></a>
+        <a href="SURREALICE.html"><img src="SURREALICE.jpeg" alt="alice" class="slide"></img></a>
+        <a href="museum2.html"><img src="museum.jpeg" alt="museum1" class="slide"></img></a>
+        <a href="petitefrance.html"><img src="petitefrance.jpeg" alt="petitefrance" class="slide"></img></a>
+
+        <div id="museum-text2">MUSEUM</div>
+        <div id="museum-text">UNTERLINDEN MUSEUM</div>
+        <div id="alice-text1">EVENT <br> from 19 nov to 24 dec 2022</div>
+        <div id="alice-text2">SURRÉALICE. ILLUSTR'ALICE</div>
+        <div id="museum2-text1">MUSEUM</div>
+        <div id="museum2-text2">Musée d' Art Moderne et <br> Contemporain de Strasbourg</div>
+        <div id="petite-text1">Experience</div>
+        <div id="petite-text2">PETITE FRANCE</div>
+        <!-- <div id="petite-text1">EXPÉRIENCE</div>
+        <div id="petite-text2">PETITE FRANCE</div>
+         -->
+        <script src="project.js"></script>
+    </div> 
+    <section class="hero-section">
+        <div style="font-size: 40px; margin-right: 50px;">Curriculum of<br> bachelor degree <br> first year <br> second semester</div>
+        <div class="card-grid">
+            <a class="card" href="#">
+            <div class="card__background" style="background-image: url(content1.png)"></div>
+            <div class="card__content">
+                <h3 class="card__heading">Web programming1</h3>
+                <p class="card__category">Introductory course whose main objective is to discover the tools 
+                    allowing the design of web pages: structuring (tool: HTML5) and formatting (tool: CSS3). 
+                    Event-driven interactions with the user will be programmed with JavaScript.</p>
+                
+            </div>
+            </a>
+            <a class="card" href="#">
+            <div class="card__background" style="background-image: url(content2.jpeg)"></div>
+            <div class="card__content">
+                <h3 class="card__heading">Algorithms and programming2</h3>
+                <p class="card__category"> The objective of this UE is to apprehend more advanced concepts in algorithms and imperative programming.</p>
+            </div>
+            </a>
+            <a class="card" href="#">
+            <div class="card__background" style="background-image: url(content3.jpeg)"></div>
+            <div class="card__content">
+                <h3 class="card__heading">Databases1</h3>
+                <p class="card__category">The objective of this course is to give the basics of the theory of Relational Databases from the most pragmatic point of view possible. </p>
+            </div>
+            </li>
+            <a class="card" href="#">
+            <div class="card__background" style="background-image: url(content4.jpeg)"></div>
+            <div class="card__content">
+                <h3 class="card__heading">Algebra S2</h3>
+                <p class="card__category">Vector spaces. Linear applications. Link with matrices. Basic change.</p>
+            </div>
+            </a>
+        <div>
+    </section>
+
+
+</body>
+<footer>
+    <div w3-include-html="footer.html"></div> 
+
+    <script>
+    includeHTML();
+    </script>
+</footer>
+
+</html>
